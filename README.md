@@ -1,6 +1,12 @@
-# jQuery Table Drug-n-Drop Plugin
-Fork tableDND plugin for jQuery. Added multiple drug-n-drop rows and some bug 
-fixes.
+# jQuery Table Drag-n-Drop Plugin
+
+Fork of the multi-tableDnD plugin for jQuery, which itself is a fork of tableDnD.
+
+* Fix issues with dragging multiple items
+* Group dragged items into a new block, irrelevant of their position when first dragged i.e. rows 1,3,5 would be become 1,2,3
+* Maintain position of multiple rows in relation to the first row dragged
+* Support jQuery throttle if it exists: http://benalman.com/projects/jquery-throttle-debounce-plugin/
+
 
 ## Documentation
 
@@ -56,7 +62,7 @@ $('#sortable').tableDnD({
 </table>
 ```
 
-Example with multiple drug-n-drop:
+Example with multiple drag-n-drop:
 
 ```js
 $('#sortable').tableDnD({
